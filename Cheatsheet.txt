@@ -1,1 +1,20 @@
-test
+•	git init (initiates)
+•	git status (inspect the content of working and staging area)
+•	git add (add file)
+o	Also adds to the staging area (if used after created)
+o	can use with multi-files (git add file1.txt file2.txt)
+•	git diff (see difference)
+•	git commit -m "A message of changes from the begining" ( Permanentely stores changes from the stagin area inside the repository)
+•	git log (shows the hash, author, date and time, message of the commit)
+•	git show HEAD (Last commit)
+•	git checkout HEAD filename (restore file to the last commit)
+•	git reset HEAD filename (unstage)
+•	git reset SHA(Hash value could be 5a860f2) cntrl-z for git
+•	Branches
+o	git branch (shows what branch we are in)
+o	git checkout branch_name (switches to the branch name mentioned)
+o	git branch x (x is a name for a new branch)
+o	git merge branch_name (merge :D)
+o	git branch -d branch_name (delete the branch)
+•	git fetch
+•	git merge origin/master
