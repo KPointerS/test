@@ -4,15 +4,22 @@ module Person
   
 class Instructor
 	include Person
-	attr_accessor :college, :level
+	attr_accessor :college, :level, :major
 	
-	def initialize(name= "", p_id= "0", department = "non", college = "none", level = "0")
+	def initialize(name= "", p_id= "0", department = "Science", college = "Sciences", level = "Associate", major = "none")
 		@name = name
 		@p_id = p_id
 		@department = department
 		@college = college
 		@level = level
-		
+		@major = major
+	end
+	def summary
+		puts name
+		puts "ID: #{p_id}"
+		puts "college: #{college}  Departmetn: #{department}"
+		puts "He is a #{level} in : #{major}"
+	end
 end
 
 class Staff
@@ -43,7 +50,8 @@ end
 
 
 student1 = Student.new("John smith", "200956482", 3.2, "Senior")
-student1.summary
+#student1.summary
 
-
+teacher = Instructor.new("Loai Almansoor", "10554", "Information and computer science", college = "College of computer science and engineering", level = "Professor", major = "Artificial Intellegence")
+teacher.summary
 
