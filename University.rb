@@ -1,9 +1,18 @@
 module Person
-	  attr_accessor :name, :p_id
+	  attr_accessor :name, :p_id, :department
   end
   
 class Instructor
 	include Person
+	attr_accessor :college, :level
+	
+	def initialize(name= "", p_id= "0", department = "non", college = "none", level = "0")
+		@name = name
+		@p_id = p_id
+		@department = department
+		@college = college
+		@level = level
+		
 end
 
 class Staff
